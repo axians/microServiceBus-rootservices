@@ -25,7 +25,8 @@ You can now start creating and updating services and scripts in your GitHub repo
 ### Creating new scripts
 
 **IMPORTANT**
-Scripts and services in **microServiceBus.com** has two parts; The code scripts that is versioned and metadata which isn’t. The metadata is things like name, description and icon, but more importantly the individual settings (*General, Static, Security and Dependencies*). 
+
+Scripts and services in **microServiceBus.com** are made up of two parts; The code scripts that is versioned and metadata which isn’t. The metadata is things like name, description and icon, but more importantly the individual settings (*General, Static, Security and Dependencies*). 
 
 If you create a service from GitHub, your service will be given “default” settings which you will have to change at a later stage.
 
