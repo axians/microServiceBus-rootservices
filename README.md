@@ -32,7 +32,7 @@ If you create a service from GitHub, your service will be given “default” se
 #### Add script
 Your script js file need to implement three functions used by the node engine. Copy the template below to get started:
 
-```
+```javascript
 var timerEvent; // In case you use a timer for fetching data
 var self; 
 var exports = module.exports = {
