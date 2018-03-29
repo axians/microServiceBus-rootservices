@@ -16,7 +16,7 @@ var exports = module.exports = {
         forecastFilePath = this.GetPropertyValue('static', 'forecastFilePath');
         loadFilePath = this.GetPropertyValue('static', 'loadFilePath');
 
-        var me  = this;
+        var me = this;
         me.msTotalTestTime = 0; // will be determined later by the testcase run
 
 
