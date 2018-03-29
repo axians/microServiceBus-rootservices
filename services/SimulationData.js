@@ -5,6 +5,8 @@ var startTime = new Date("2016-01-04 07:00:00");
 var forecastFilePath;
 var loadFilePath;
 var lastQuarter;
+var timeTimer;
+var currentTime = new Date("2016-01-04T06:00:00Z");
 const forecastLimit = 96;
 var loadForecast = Array(forecastLimit).fill(0);
 
@@ -25,6 +27,16 @@ var exports = module.exports = {
         lastQuarter = me.GetStartOfQuarter(startTime);
 
         me.Debug("Loading input for testCase " + testCase);
+
+        timeTimer = setInterval(function () {
+            currentTime.setSeconds(currentTime.getSeconds() + 10);
+            var newInput = {
+                loadCurrent: me.GetLoad(currentTime)
+            };
+            me.SubmitMessage(newInput, 'application/json', []);
+
+        }, 1000 );
+        
 
         me.InitTestLoad();
         me.InitForecast();
