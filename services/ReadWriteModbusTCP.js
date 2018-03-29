@@ -4,7 +4,7 @@ const P_SET_BESS = 20502;
 const CMD_BESS = 20501;
 var ModbusRTU;
 var client;
-var isTest;
+var isTest ;
 var batteryOutput;
 var batterySOC;
 var readBatteryOutputTimer;

@@ -92,7 +92,6 @@ var exports = module.exports = {
                         var newInput = {
                             batteryOutput: batterySimulationController.batteryOutput,
                             batteryStateOfCharge: batterySimulationController.batteryStateOfCharge,
-                            loadCurrent: loadCurrent
                         };
                         peakshaving.send(newInput);
                     }
