@@ -1,6 +1,6 @@
 /*
 Supported Accelerometers:
-
+ 
 Analog (Like the Tinkerkit 2/3-Axis Accelerometer)
 MPU6050 (I2C IMU)
 ADXL345 (I2C)
